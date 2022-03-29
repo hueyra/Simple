@@ -22,7 +22,7 @@ class App : Application(), IMediaXApp {
         super.onCreate()
         MediaXAppInitializer.getInstance().setup(this)
         BiometricAuth.getInstance().init(this)
-
+        //X5SdkInitializer.init(this)
     }
 
     override fun getAppContext(): Context {

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.android.simple.R
 import com.android.simple.view.biometric.BiometricActivity
+import com.github.hueyra.webview.WebActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +19,11 @@ class MainActivity : AppCompatActivity() {
         }
         findViewById<View>(R.id.btn_action2).setOnClickListener {
             startActivity(Intent(this, BiometricActivity::class.java))
+        }
+        findViewById<View>(R.id.btn_action3).setOnClickListener {
+            startActivity(Intent(this, WebActivity::class.java).apply {
+                putExtra("url", "https://www.wanandroid.com/")
+            })
         }
     }
 
