@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bidi_tv_items_text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/bidi_v_items_split"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_split_line_height"
+        android:background="@color/color_split_line" />
+
+</LinearLayout>

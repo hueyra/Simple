@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SimpleTitleView">
+        <attr name="stv_title" format="string" />
+        <attr name="stv_action" format="string" />
+        <attr name="stv_action_icon" format="reference" />
+        <attr name="stv_finish_icon" format="reference" />
+        <attr name="stv_show_finish" format="boolean" />
+        <attr name="stv_show_status_bar" format="boolean" />
+        <attr name="stv_show_split_line" format="boolean" />
+    </declare-styleable>
+
+</resources>

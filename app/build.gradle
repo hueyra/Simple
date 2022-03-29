@@ -36,6 +36,12 @@ android {
             dirs 'libs'   // aar目录
         }
     }
+
+
+    buildFeatures {
+        // 开启viewBinding
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -51,5 +57,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation 'com.github.getActivity:XXPermissions:11.6'//Permissions
+
+
+    implementation project(':lib_base')
 
 }

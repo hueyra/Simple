@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/stv_v_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stv_status_height"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/stv_iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/stv_title_height"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:paddingStart="3dp"
+        android:paddingTop="14dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="14dp"
+        android:src="@mipmap/ic_activity_back_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stv_v_status" />
+
+    <TextView
+        android:id="@+id/stv_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stv_title_height"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textColor="@color/stv_title_text"
+        android:textSize="@dimen/stv_title_text_sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/stv_v_status" />
+
+    <TextView
+        android:id="@+id/stv_tv_action"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/stv_title_height"
+        android:layout_marginEnd="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/stv_title_text"
+        android:textSize="@dimen/stv_title_text_sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stv_v_status" />
+
+    <ImageView
+        android:id="@+id/stv_iv_action"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/stv_title_height"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:padding="15dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stv_v_status" />
+
+    <View
+        android:id="@+id/stv_v_split"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stv_split_line_height"
+        android:background="@color/stv_split_line"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

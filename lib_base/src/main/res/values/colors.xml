@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="stv_split_line">#F3F4F9</color>
+    <color name="stv_title_text">#FFFFFF</color>
+
+    <color name="color_ripple_musk">#E0E0E0</color>
+
+    <color name="color_dialog_plus_bg">#00000000</color>
+
+    <color name="color_split_line">#F3F4F9</color>
+
+    <color name="sstv_bg">#EFEFF4</color>
+
+</resources>
