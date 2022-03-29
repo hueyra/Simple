@@ -2,6 +2,7 @@ package com.android.simple
 
 import android.app.Application
 import android.content.Context
+import com.github.hueyra.biometricauth.BiometricAuth
 import com.github.hueyra.mediax.app.IMediaXApp
 import com.github.hueyra.mediax.app.MediaXAppInitializer
 import com.github.hueyra.mediax.engine.ImageEngine
@@ -20,6 +21,8 @@ class App : Application(), IMediaXApp {
     override fun onCreate() {
         super.onCreate()
         MediaXAppInitializer.getInstance().setup(this)
+        BiometricAuth.getInstance().init(this)
+
     }
 
     override fun getAppContext(): Context {

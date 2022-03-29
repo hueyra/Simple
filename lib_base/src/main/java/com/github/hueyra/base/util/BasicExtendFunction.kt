@@ -8,6 +8,15 @@ import android.view.View
 import androidx.viewbinding.BuildConfig
 import com.github.hueyra.base.data.IAPIResponse
 
+
+fun String?.isEmptyy(): Boolean {
+    return TextUtils.isEmpty(this)
+}
+
+fun String?.isNotEmptyy(): Boolean {
+    return !TextUtils.isEmpty(this)
+}
+
 /**
  * String的扩展函数，用来日志打印
  *

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.android.simple.R
+import com.android.simple.view.biometric.BiometricActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,6 +15,9 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<View>(R.id.btn_action1).setOnClickListener {
             startActivity(Intent(this, AlbumCameraActivity::class.java))
+        }
+        findViewById<View>(R.id.btn_action2).setOnClickListener {
+            startActivity(Intent(this, BiometricActivity::class.java))
         }
     }
 
