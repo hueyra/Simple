@@ -47,6 +47,9 @@
         <activity
             android:name=".view.biometric.PatternLockActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.PickerActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

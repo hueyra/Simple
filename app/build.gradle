@@ -57,6 +57,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation project(':lib_base')
+    implementation project(':lib_picker')
     implementation project(':lib_webview')
     implementation project(':lib_patternlocker')
 

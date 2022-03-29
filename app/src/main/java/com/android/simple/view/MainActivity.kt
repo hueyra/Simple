@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
                 putExtra("url", "https://www.wanandroid.com/")
             })
         }
+        findViewById<View>(R.id.btn_action4).setOnClickListener {
+            startActivity(Intent(this, PickerActivity::class.java))
+        }
     }
 
 }
