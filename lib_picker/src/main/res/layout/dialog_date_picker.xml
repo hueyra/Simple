@@ -46,12 +46,12 @@
 
         </FrameLayout>
 
-<!--        <com.ilanying.merchant.widget.datepicker.DatePickerView-->
-<!--            android:id="@+id/dsd_pv_date_picker"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_marginTop="@dimen/dp_15"-->
-<!--            android:layout_marginBottom="@dimen/dp_15" />-->
+        <com.github.hueyra.picker.date.DatePickerView
+            android:id="@+id/dsd_pv_date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_15" />
 
     </LinearLayout>
 

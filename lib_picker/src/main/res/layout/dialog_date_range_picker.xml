@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_white_with_top_corner">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_bottom_sheet_title" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#F3F4F5" />
+
+    <com.github.hueyra.picker.range.core.RangeCalendarView
+        android:id="@+id/cv_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="#FFF" />
+
+</LinearLayout>

@@ -15,8 +15,17 @@
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.215" />
         <entry key="lib_base/src/main/res/layout/dialog_loading.xml" value="0.3104166666666667" />
         <entry key="lib_base/src/main/res/layout/layout_simple_title.xml" value="0.3104166666666667" />
+        <entry key="lib_picker/src/main/res/drawable/bg_bottom_sheet_title.xml" value="0.13" />
+        <entry key="lib_picker/src/main/res/drawable/bg_day_select_left.xml" value="0.13" />
+        <entry key="lib_picker/src/main/res/drawable/bg_day_select_right.xml" value="0.13" />
+        <entry key="lib_picker/src/main/res/drawable/bg_day_select_single.xml" value="0.13" />
+        <entry key="lib_picker/src/main/res/drawable/bg_white_with_top_corner.xml" value="0.13" />
+        <entry key="lib_picker/src/main/res/layout/activity_date_range_pick.xml" value="0.3104166666666667" />
         <entry key="lib_picker/src/main/res/layout/dialog_city_picker.xml" value="0.3104166666666667" />
         <entry key="lib_picker/src/main/res/layout/dialog_date_picker.xml" value="0.3104166666666667" />
+        <entry key="lib_picker/src/main/res/layout/dialog_date_range_picker.xml" value="0.25" />
+        <entry key="lib_picker/src/main/res/layout/layout_calendar_body.xml" value="0.3104166666666667" />
+        <entry key="lib_picker/src/main/res/layout/layout_date_picker_view.xml" value="0.3104166666666667" />
         <entry key="lib_webview/src/main/res/drawable/progress_bar_states.xml" value="0.136" />
         <entry key="lib_webview/src/main/res/layout/activity_web.xml" value="0.25" />
       </map>
