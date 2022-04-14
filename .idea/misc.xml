@@ -26,7 +26,7 @@
         <entry key="lib_picker/src/main/res/layout/dialog_date_range_picker.xml" value="0.25" />
         <entry key="lib_picker/src/main/res/layout/item_cascade_picker.xml" value="0.3104166666666667" />
         <entry key="lib_picker/src/main/res/layout/layout_calendar_body.xml" value="0.3104166666666667" />
-        <entry key="lib_picker/src/main/res/layout/layout_cascade_picker.xml" value="0.3104166666666667" />
+        <entry key="lib_picker/src/main/res/layout/layout_cascade_picker.xml" value="0.165" />
         <entry key="lib_picker/src/main/res/layout/layout_date_picker_view.xml" value="0.3104166666666667" />
         <entry key="lib_webview/src/main/res/drawable/progress_bar_states.xml" value="0.136" />
         <entry key="lib_webview/src/main/res/layout/activity_web.xml" value="0.25" />

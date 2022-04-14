@@ -8,13 +8,11 @@ package com.github.hueyra.picker.cascade.core
 interface ICascadePickerData {
 
     var isCascadePicked: Boolean
-        get() = false
-        set(value) {}
 
-    fun getPickerValue(): String
+    fun getPickerID(): String
 
     fun getPickerParentID(): String
 
-    fun getPickerID(): String
+    fun getPickerValue(): String
 
 }

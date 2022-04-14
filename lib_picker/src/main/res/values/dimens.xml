@@ -5,4 +5,5 @@
 
     <dimen name="bottom_dialog_corner_radius" tools:ignore="MissingDefaultResource">10dp</dimen>
 
+    <dimen name="cascade_picker_item_height">44dp</dimen>
 </resources>

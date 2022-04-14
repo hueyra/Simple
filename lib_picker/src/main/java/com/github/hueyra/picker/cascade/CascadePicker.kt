@@ -2,6 +2,8 @@ package com.github.hueyra.picker.cascade
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.res.Resources
+import android.util.TypedValue
 import com.github.hueyra.picker.base.IPickerView
 import com.orhanobut.dialogplus.DialogPlus
 import android.widget.TextView
@@ -11,6 +13,7 @@ import com.github.hueyra.picker.cascade.core.CascadeAdapter
 import com.github.hueyra.picker.cascade.core.ICascadePickerData
 import android.view.LayoutInflater
 import android.widget.ImageView
+import android.widget.LinearLayout
 import com.github.hueyra.picker.R
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
@@ -37,9 +40,11 @@ class CascadePicker(context: Context) : IPickerView {
     private val mICascadePickerDataList: MutableList<ICascadePickerData>
     private val mPickerCascadeMap: MutableMap<String, List<ICascadePickerData>>
     private var mTabLayoutCanDealSelect = true
+    private val mListItemHeight: Float
 
     init {
         val view = LayoutInflater.from(context).inflate(R.layout.layout_cascade_picker, null)
+        mListItemHeight = dp2px(44f)
         //
         mCplTvTitle = view.findViewById(R.id.cpl_tv_title)
         mCplIvCancel = view.findViewById(R.id.cpl_iv_cancel)
@@ -113,6 +118,20 @@ class CascadePicker(context: Context) : IPickerView {
             //
             val list = mPickerCascadeMap[tabID]
             if (list != null) {
+                //修改一下rv的高度
+                val lp = mCplRvContent.layoutParams
+                lp.width = LinearLayout.LayoutParams.MATCH_PARENT
+                lp.height = when {
+                    list.size <= 4 -> {
+                        (4 * mListItemHeight).toInt()
+                    }
+                    list.size == 5 -> {
+                        (5 * mListItemHeight).toInt()
+                    }
+                    else -> {
+                        (6 * mListItemHeight).toInt()
+                    }
+                }
                 mICascadePickerDataList.clear()
                 mICascadePickerDataList.addAll(list)
                 mPickerAdapter.notifyDataSetChanged()
@@ -211,6 +230,12 @@ class CascadePicker(context: Context) : IPickerView {
 
     fun setOnItemPickedListener(l: (List<ICascadePickerData>) -> Unit) {
         mOnItemPickedListener = l
+    }
+
+    private fun dp2px(dp: Float): Float {
+        return TypedValue.applyDimension(
+            TypedValue.COMPLEX_UNIT_DIP, dp, Resources.getSystem().displayMetrics
+        )
     }
 
 }
